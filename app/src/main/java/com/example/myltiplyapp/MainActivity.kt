@@ -22,8 +22,16 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-
-
+        //function
+        fun Multiply (number1: Int, number2: Int) {
+            var result = number1 * number2
+            txtAns.text = result.toString()
+        }
+        //
+    btnCalc.setOnClickListener {
+        var n1 = num1.text.toString().toInt()
+        var n2 = num2.
+    }
 
 
 
