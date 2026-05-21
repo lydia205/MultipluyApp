@@ -27,10 +27,13 @@ class MainActivity : AppCompatActivity() {
             var result = number1 * number2
             txtAns.text = result.toString()
         }
-        //added the button 
+        //added the button
     btnCalc.setOnClickListener {
         var n1 = num1.text.toString().toInt()
         var n2 = num2.text.toString().toInt()
+
+        //added the multiply number
+        Multiply(n1, n2)
     }
 
 
