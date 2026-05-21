@@ -7,13 +7,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/editNumF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editNumS"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editNumS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="205dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editNumF"
+        app:layout_constraintStart_toStartOf="@+id/editNumF"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginBottom="167dp"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAns"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editNumS"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/txtAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="128dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
